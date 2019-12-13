@@ -18,17 +18,28 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    border: 1px solid black;
+
+    
     @media @phone{
-      height: 20vh;
+      height: 30vh;
       width: 100%;
       margin-bottom: 10px;
+      display: flex;
+      margin-bottom: 5%;
+    }
+
+    .blast{
+      @media @phone{
+        width: 90%;
+      }
     }
 
     .sky, .launch{
+      border: 1px solid black;
       @media @phone{
         display: none;
         width: 1%;
+        height: 1vh;
         border: 1px solid black;
       }
     }
@@ -60,8 +71,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 90%;
+        margin-top: 5%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -73,12 +94,22 @@
 
       .btn{
           .custom-button(black, 10rem, white);
+
+          @media @phone {
+            width: 95%;
+
+          }
         }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 90%;
+        margin-left: 1%;
+      }
       
       img {
         width: 100%;
